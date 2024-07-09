@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './styles/global.css';
+import 'swiper/css';
 
 export const metadata: Metadata = {
   title: 'Specscore',
