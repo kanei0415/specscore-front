@@ -24,6 +24,11 @@ const images = {
     star: `${IMAGE_ROOT}/icons/ic-star.png`,
     user: `${IMAGE_ROOT}/icons/ic-user.png`,
   },
+  mainBanner: {
+    type01: `${IMAGE_ROOT}/main-banner-01.png`,
+    type02: `${IMAGE_ROOT}/main-banner-02.png`,
+    type03: `${IMAGE_ROOT}/main-banner-03.png`,
+  },
 };
 
 export default images;

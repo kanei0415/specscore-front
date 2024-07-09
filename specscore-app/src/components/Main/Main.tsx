@@ -2,6 +2,7 @@ import Image from 'next/image';
 import style from './styles/main.module.css';
 import images from '@assets/images';
 import Link from 'next/link';
+import Slide from '@components/common/Slide/Slide';
 
 const Main = () => {
   return (
@@ -49,6 +50,17 @@ const Main = () => {
           </ul>
         </nav>
       </header>
+      <section className='flex'>
+        <Slide>
+          {[
+            images.mainBanner.type01,
+            images.mainBanner.type02,
+            images.mainBanner.type03,
+          ].map((b, i) => (
+            <img key={i} src={b} alt='banner' />
+          ))}
+        </Slide>
+      </section>
     </main>
   );
 };
