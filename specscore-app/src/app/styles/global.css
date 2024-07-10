@@ -25,6 +25,18 @@
 
 body {
   width: 100vw;
+  max-width: 768px;
   height: 100vh;
   overflow: hidden;
+}
+
+.root {
+  width: 100vw;
+  max-width: 768px;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  max-width: 768px;
 }
