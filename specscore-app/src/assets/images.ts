@@ -23,6 +23,12 @@ const images = {
     search: `${IMAGE_ROOT}/icons/ic-search.png`,
     star: `${IMAGE_ROOT}/icons/ic-star.png`,
     user: `${IMAGE_ROOT}/icons/ic-user.png`,
+    home: `${IMAGE_ROOT}/icons/ic-home.png`,
+    homeFill: `${IMAGE_ROOT}/icons/ic-home-fill.png`,
+    recruit: `${IMAGE_ROOT}/icons/ic-recruit.png`,
+    recruitFill: `${IMAGE_ROOT}/icons/ic-recruit-fill.png`,
+    lecture: `${IMAGE_ROOT}/icons/ic-lecture.png`,
+    lectureFill: `${IMAGE_ROOT}/icons/ic-lecture-fill.png`,
   },
   mainBanner: {
     type01: `${IMAGE_ROOT}/main-banner-01.png`,
