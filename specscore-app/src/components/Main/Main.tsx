@@ -15,7 +15,7 @@ const Main = () => {
   const [tab, setTab] = useState<Tabs>('home');
 
   return (
-    <main className='root flex flex-col'>
+    <main className='root flex flex-col overflow-scroll scroll-y'>
       <header
         className={`${style.header} flex flex-row justify-between items-center`}>
         <div className='flex flex-row'>
@@ -45,7 +45,7 @@ const Main = () => {
                 />
               </Link>
             </li>
-            <div className={style.gap12} />
+            <div className='gap12' />
             <li>
               <Link href={'/mypage'}>
                 <Image
@@ -64,7 +64,8 @@ const Main = () => {
         {tab == 'recruit' && <RecruitTab />}
         {tab == 'lecture' && <LectureTab />}
       </div>
-      <nav className={`${style.bottomTab} flex flex-row`}>
+      <nav
+        className={`${style.bottomTab} flex flex-row sticky bottom-0 bg-white`}>
         <button
           onClick={() => setTab('home')}
           className='flex flex-col flex-1 justify-center items-center'>

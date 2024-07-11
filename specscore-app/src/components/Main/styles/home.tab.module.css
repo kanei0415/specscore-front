@@ -1,0 +1,32 @@
+.recruitBanner {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recruitImage {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.lectureCard {
+  width: 120px;
+  display: inline-block;
+}
+
+.lectureImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #d9d9d9;
+}
+
+.lectureTitle {
+  max-width: 100px;
+}

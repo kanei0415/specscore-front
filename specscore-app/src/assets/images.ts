@@ -13,7 +13,9 @@ const images = {
   },
   icons: {
     arrow: `${IMAGE_ROOT}/icons/ic-arrow.png`,
+    fire: `${IMAGE_ROOT}/icons/ic-fire.png`,
     back: `${IMAGE_ROOT}/icons/ic-back.png`,
+    good: `${IMAGE_ROOT}/icons/ic-good.png`,
     cancel: `${IMAGE_ROOT}/icons/ic-cancel.png`,
     crown: `${IMAGE_ROOT}/icons/ic-crown.png`,
     edit: `${IMAGE_ROOT}/icons/ic-edit.png`,
