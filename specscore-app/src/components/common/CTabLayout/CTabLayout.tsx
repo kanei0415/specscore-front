@@ -12,7 +12,7 @@ type Props = {
 
 const CTabLayout = ({ tabs, label, rendering, children }: Props) => {
   const [current, setCurrent] = useState<string>(tabs[0]);
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const left = useMemo(
@@ -22,8 +22,10 @@ const CTabLayout = ({ tabs, label, rendering, children }: Props) => {
 
   useEffect(() => {
     const onWindowSizeChanged = () => {
-      setWidth(window.innerWidth);
+      setWidth(Math.min(window.innerWidth, 768));
     };
+
+    setWidth(Math.min(window.innerWidth, 768));
 
     window.addEventListener('resize', onWindowSizeChanged);
 

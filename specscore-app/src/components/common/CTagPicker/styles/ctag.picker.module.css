@@ -1,0 +1,23 @@
+.tagItem {
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.pickerWrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.closeBtn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.pickerRow {
+  margin-bottom: 12px;
+}
