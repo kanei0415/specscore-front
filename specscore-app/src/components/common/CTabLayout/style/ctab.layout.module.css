@@ -1,0 +1,12 @@
+.tab {
+  height: 48px;
+  border-bottom: 1px solid #6c757d;
+}
+
+.bottomIndicator {
+  position: absolute;
+  height: 2px;
+  background-color: #ff4500;
+  bottom: 0;
+  transition: left 500ms ease;
+}

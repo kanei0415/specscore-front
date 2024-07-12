@@ -3,12 +3,6 @@
   padding: 12px;
 }
 
-.gap4 {
-  width: 4px;
-  height: 4px;
-}
-
-.gap12 {
-  width: 12px;
-  height: 12px;
+.bottomTab {
+  height: 48px;
 }

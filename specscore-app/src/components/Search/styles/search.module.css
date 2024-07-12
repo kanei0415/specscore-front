@@ -1,0 +1,16 @@
+.inputWrapper {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 12px;
+  background-color: #ff450088;
+}
+
+.searchInput::placeholder {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.tagItem {
+  padding: 4px 12px;
+  border-radius: 999px;
+}
