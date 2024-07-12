@@ -14,6 +14,9 @@ const config: Config = {
         gray: '#6C757D',
         black: '#000000',
       },
+      gap: {
+        '12': '12px',
+      },
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],
