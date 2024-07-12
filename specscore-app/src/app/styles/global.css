@@ -18,6 +18,9 @@
   list-style: none;
   text-decoration: none;
   color: #000000;
+  border: 0;
+  outline: 0;
+  background: none;
 }
 
 *::-webkit-scrollbar {

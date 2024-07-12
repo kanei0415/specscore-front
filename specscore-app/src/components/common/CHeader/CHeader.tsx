@@ -9,7 +9,7 @@ type Props = {
 
 const CHeader = ({ label, prev }: Props) => {
   return (
-    <header className='h-12 flex justify-center items-center relative'>
+    <header className='min-h-12 flex justify-center items-center relative'>
       <div className='absolute left-3 top-3'>
         <Link href={prev}>
           <Image
