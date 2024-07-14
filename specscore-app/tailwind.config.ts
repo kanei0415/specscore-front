@@ -13,12 +13,22 @@ const config: Config = {
         yellow: '#FFFF00',
         gray: '#6C757D',
         black: '#000000',
+        'plan-basic': '#FFA500',
+        'plan-premium': '#007BFF',
+        'plan-black': '#111111',
+        'plan-general': '#6C757D',
+        'plan-tooltip': '#F1F1F1',
       },
       gap: {
         '12': '12px',
       },
+      borderRadius: {
+        '4': '4px',
+      },
     },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
+  plugins: [],
+  safelist: [{ pattern: /(plan-.*)/ }, { pattern: /([0-12])/ }],
 };
+
 export default config;

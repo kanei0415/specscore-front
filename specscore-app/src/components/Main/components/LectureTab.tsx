@@ -36,11 +36,13 @@ const LectureCard = () => {
               </div>
             </div>
           </div>
-          <div className='w-full mt-3'>
-            <a>{'한국에서 취업합격 끝장을 알리다.'}</a>
+          <div className='flex-1' />
+          <div className='w-full'>
+            <a className='text-sm'>{'한국에서 취업합격 끝장을 알리다.'}</a>
           </div>
-          <div className='w-full mt-1'>
-            <a className='text-xl font-black'>{'130,000원'}</a>
+          <div className='flex-1' />
+          <div className='w-full'>
+            <a className='text-lg font-black'>{'130,000원'}</a>
           </div>
         </div>
       </div>
