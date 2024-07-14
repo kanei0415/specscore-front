@@ -1,7 +1,7 @@
 import SearchContainer from '@components/Search/containers/SearchContainer';
 
-const SearchPage = () => {
+const Page = () => {
   return <SearchContainer />;
 };
 
-export default SearchPage;
+export default Page;
