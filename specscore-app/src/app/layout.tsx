@@ -1,6 +1,10 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './styles/global.css';
 import 'swiper/css';
+
+export const viewport: Viewport = {
+  themeColor: 'black',
+};
 
 export const metadata: Metadata = {
   title: 'Specscore',
