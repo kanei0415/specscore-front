@@ -1,6 +1,7 @@
 const IMAGE_ROOT = '/images';
 
 const images = {
+  plan: `${IMAGE_ROOT}/plan.png`,
   logo: {
     x1: `${IMAGE_ROOT}/ic-logo@x1.png`,
     x2: `${IMAGE_ROOT}/ic-logo@x2.png`,
