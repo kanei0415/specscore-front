@@ -1,5 +1,7 @@
-import MainContainer from '@components/Main/containers/MainContainer';
+import Main from '@components/Main/Main';
 
-export default function Page() {
-  return <MainContainer />;
-}
+const Page = () => {
+  return <Main isLogined={false} />;
+};
+
+export default Page;

@@ -20,7 +20,7 @@ const RecruitTab = () => {
           alt='인기 채용공고'
         />
         <div className='gap4' />
-        <a>{'인기 채용공고'}</a>
+        <span>{'인기 채용공고'}</span>
       </div>
       <div className={`flex`}>
         <Slide>
@@ -34,7 +34,7 @@ const RecruitTab = () => {
         </Slide>
       </div>
       <div className='mt-6 flex flex-row justify-between items-center pl-3 pr-3'>
-        <a>{'지원 가능한 채용공고'}</a>
+        <span>{'지원 가능한 채용공고'}</span>
         <CBottomSheet
           title='채용공고 기준'
           prev='최신순'
@@ -42,7 +42,7 @@ const RecruitTab = () => {
           onItemSelected={() => {}}
           renderItem={(item) => (
             <div className='w-full flex justify-center items-center mb-3'>
-              <a>{item}</a>
+              <span>{item}</span>
             </div>
           )}
         />

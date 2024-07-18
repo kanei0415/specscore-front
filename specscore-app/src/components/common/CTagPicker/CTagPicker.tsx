@@ -61,7 +61,7 @@ const CTagPicker = ({ prev, onTagPicked, arrowVisible = false }: Props) => {
             className={`${styles.pickerWrapper} bg-white p-3 flex flex-col`}>
             <div
               className={`${styles.pickerRow} flex justify-center items-center`}>
-              <a>{'카테고리 선택'}</a>
+              <span>{'카테고리 선택'}</span>
             </div>
             <button
               onClick={() => setIsPickerVisible(false)}
@@ -83,12 +83,12 @@ const CTagPicker = ({ prev, onTagPicked, arrowVisible = false }: Props) => {
                   key={i}
                   className={`${styles.pickerRow} flex flex-row justify-between items-center`}>
                   <div>
-                    <a>{v.label}</a>
+                    <span>{v.label}</span>
                   </div>
                   <div>
-                    <a className='font-bold text-black text-sm'>
-                      <a className='text-red'>{'12'}</a> {' 개의 강의'}
-                    </a>
+                    <span className='font-bold text-black text-sm'>
+                      <span className='text-red'>{'12'}</span> {' 개의 강의'}
+                    </span>
                   </div>
                 </button>
               )),

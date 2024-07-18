@@ -71,16 +71,16 @@ const Search = ({
           <div className='flex-1 flex flex-col justify-center items-center'>
             <Image src={images.logo.x3} width={72} height={72} alt='로고' />
             <div className='gap4' />
-            <a>{'강의 제목 및 강사 이름으로'}</a>
-            <a>{'검색해보세요!'}</a>
+            <span>{'강의 제목 및 강사 이름으로'}</span>
+            <span>{'검색해보세요!'}</span>
           </div>
         ) : (
           <>
             <div className='mb-3 p-3 flex flex-row justify-between'>
-              <a className='text-black'>
-                <a className='text-xl'>{`"첨삭"`}</a>
+              <span className='text-black'>
+                <span className='text-xl'>{`"첨삭"`}</span>
                 {'의 검색 결과'}
-              </a>
+              </span>
               <div
                 className={`inline-block font-bold text-sm text-white bg-red ${styles.tagItem}`}>
                 {`#자소서`}

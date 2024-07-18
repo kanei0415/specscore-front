@@ -11,20 +11,24 @@ const Plan = () => {
       <div className='w-full mt-6 mb-6 flex flex-col items-center'>
         <Image src={images.logo.x3} width={72} height={72} alt='logo' />
         <div className='gap12' />
-        <a className='text-sm mb-1'>{'스펙스코어가 제공하는 플랜을 통해'}</a>
-        <a className='text-sm'>{'더 많은 서비스를 이용해보세요!'}</a>
+        <span className='text-sm mb-1'>
+          {'스펙스코어가 제공하는 플랜을 통해'}
+        </span>
+        <span className='text-sm'>{'더 많은 서비스를 이용해보세요!'}</span>
       </div>
       <div className='w-full flex flex-col pl-3 pr-3'>
         <button>
           <div className={`${styles.planWrapper}`}>
             <div className='flex flex-col justify-evenly items-start'>
               <CPlan plan='Basic' tooltipVisible={false} />
-              <a className='text-sm mt-1'>{'· 자기소개서 전체 무료 열람'}</a>
-              <a className='text-sm'>{'· 점수화 서비스 2회 제공'}</a>
-              <a className='text-sm'>{'· 취업 컨설팅 1회 제공'}</a>
+              <span className='text-sm mt-1'>
+                {'· 자기소개서 전체 무료 열람'}
+              </span>
+              <span className='text-sm'>{'· 점수화 서비스 2회 제공'}</span>
+              <span className='text-sm'>{'· 취업 컨설팅 1회 제공'}</span>
             </div>
             <div className='flex flex-col justify-end'>
-              <a className='font-bold text-xl'>{'179,000원'}</a>
+              <span className='font-bold text-xl'>{'179,000원'}</span>
             </div>
           </div>
         </button>
@@ -32,15 +36,17 @@ const Plan = () => {
           <div className={`${styles.planWrapper}`}>
             <div className='flex flex-col justify-evenly items-start'>
               <CPlan plan='Premium' tooltipVisible={false} isRecommanded />
-              <a className='text-sm mt-1'>{'· 자기소개서 전체 무료 열람'}</a>
-              <a className='text-sm'>{'· 점수화 서비스 2회 제공'}</a>
-              <a className='text-sm'>{'· 취업 컨설팅 1회 제공'}</a>
+              <span className='text-sm mt-1'>
+                {'· 자기소개서 전체 무료 열람'}
+              </span>
+              <span className='text-sm'>{'· 점수화 서비스 2회 제공'}</span>
+              <span className='text-sm'>{'· 취업 컨설팅 1회 제공'}</span>
             </div>
             <div className='flex flex-col justify-end relative'>
-              <a className='text-sm text-gray line-through absolute right-6 bottom-6'>
+              <span className='text-sm text-gray line-through absolute right-6 bottom-6'>
                 {'350,000원'}
-              </a>
-              <a className='font-bold text-xl'>{'179,000원'}</a>
+              </span>
+              <span className='font-bold text-xl'>{'179,000원'}</span>
             </div>
           </div>
         </button>
@@ -48,15 +54,17 @@ const Plan = () => {
           <div className={`${styles.planWrapper}`}>
             <div className='flex flex-col justify-evenly items-start'>
               <CPlan plan='Black' tooltipVisible={false} />
-              <a className='text-sm mt-1'>{'· 자기소개서 전체 무료 열람'}</a>
-              <a className='text-sm'>{'· 점수화 서비스 2회 제공'}</a>
-              <a className='text-sm'>{'· 취업 컨설팅 1회 제공'}</a>
+              <span className='text-sm mt-1'>
+                {'· 자기소개서 전체 무료 열람'}
+              </span>
+              <span className='text-sm'>{'· 점수화 서비스 2회 제공'}</span>
+              <span className='text-sm'>{'· 취업 컨설팅 1회 제공'}</span>
             </div>
             <div className='flex flex-col justify-end relative'>
-              <a className='text-sm text-gray line-through absolute right-6 bottom-6'>
+              <span className='text-sm text-gray line-through absolute right-6 bottom-6'>
                 {'350,000원'}
-              </a>
-              <a className='font-bold text-xl'>{'179,000원'}</a>
+              </span>
+              <span className='font-bold text-xl'>{'179,000원'}</span>
             </div>
           </div>
         </button>

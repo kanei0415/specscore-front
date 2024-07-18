@@ -20,7 +20,7 @@ const CHeader = ({ label, prev }: Props) => {
           />
         </Link>
       </div>
-      <a className='text-black'>{label}</a>
+      <span className='text-black'>{label}</span>
     </header>
   );
 };
