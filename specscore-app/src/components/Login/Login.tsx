@@ -56,11 +56,11 @@ const Login = () => {
       <div className='mt-12 flex flex-col'>
         <div className='flex flex-row mb-3 justify-between items-center'>
           <span>{'아이디를 잊어버리셨나요?'}</span>
-          <CLink label='아이디 찾기' to='/findid' />
+          <CLink label='아이디 찾기' to='/find/id' />
         </div>
         <div className='flex flex-row mb-3 justify-between items-center'>
           <span>{'비밀번호를 잊어버리셨나요?'}</span>
-          <CLink label='비밀번호 찾기' to='/findpw' />
+          <CLink label='비밀번호 찾기' to='/find/pw' />
         </div>
         <BreakLine />
         <div className='flex flex-row mt-3 justify-between items-center'>

@@ -80,6 +80,11 @@ body {
   max-width: 768px;
 }
 
+.gap2 {
+  width: 2px;
+  height: 2px;
+}
+
 .gap4 {
   width: 4px;
   height: 4px;
