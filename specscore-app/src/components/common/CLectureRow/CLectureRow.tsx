@@ -18,7 +18,7 @@ const CLectureRow = ({
     <div className={`${styles.wrapper} flex flex-row items-center`}>
       <div className={styles.image} />
       <div className='ml-2 flex flex-col items-start flex-1'>
-        <a className='truncate'>{'자소서 잘 쓰는 법'}</a>
+        <span className='truncate'>{'자소서 잘 쓰는 법'}</span>
         <div className='mr-1 flex flex-row items-center'>
           {isVisibleScore && (
             <div className='flex flex-row items-center'>
@@ -28,7 +28,7 @@ const CLectureRow = ({
                 height={24}
                 alt='평점'
               />
-              <a className='ml-1'>{'4.8 (123)'}</a>
+              <span className='ml-1'>{'4.8 (123)'}</span>
             </div>
           )}
           {isVisibleRecommandCounter && (
@@ -39,7 +39,7 @@ const CLectureRow = ({
                 height={24}
                 alt='개추'
               />
-              <a className='ml-1'>{'234'}</a>
+              <span className='ml-1'>{'234'}</span>
             </div>
           )}
         </div>
@@ -47,9 +47,9 @@ const CLectureRow = ({
       <div className='ml-2 flex flex-col items-end'>
         <div className='flex flex-row items-center'>
           <Image src={images.icons.edit} width={24} height={24} alt='작성자' />
-          <a className='ml-1 text-gray text-sm'>{'자소서 마스터'}</a>
+          <span className='ml-1 text-gray text-sm'>{'자소서 마스터'}</span>
         </div>
-        <a>{'12,000₩'}</a>
+        <span>{'12,000₩'}</span>
       </div>
     </div>
   );

@@ -27,6 +27,12 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extend: {
+      borderWidth: ['focus'],
+      borderColor: ['focus'],
+    },
+  },
   plugins: [],
   safelist: [{ pattern: /(plan-.*)/ }, { pattern: /([0-12])/ }],
 };
