@@ -35,7 +35,11 @@ const CCheck = ({ shape, onChecked, prev = false, children }: Props) => {
         )}
         {!checked && (
           <Image
-            src={shape == 'rounded' ? images.icons.round : images.icons.square}
+            src={
+              shape == 'rounded'
+                ? images.icons.roundUnselected
+                : images.icons.squareUnselected
+            }
             width={24}
             height={24}
             alt='체크하기'

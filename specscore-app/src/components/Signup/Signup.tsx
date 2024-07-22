@@ -4,6 +4,8 @@ import CHeader from '@components/common/CHeader/CHeader';
 import React, { useState } from 'react';
 import SignupStep1 from './components/SignupStep1';
 import SignupStep2 from './components/SignupStep2';
+import SignupStep3 from './components/SignupStep3';
+import SignupStep4 from './components/SignupStep4';
 
 type WrapperProps = {
   step: number;
@@ -35,6 +37,16 @@ const Signup = () => {
           <SignupStep2
             key={1}
             onNextClicked={() => setStep(2)}
+            fillForm={() => {}}
+          />,
+          <SignupStep3
+            key={2}
+            onNextClicked={() => setStep(3)}
+            fillForm={() => {}}
+          />,
+          <SignupStep4
+            key={3}
+            onNextClicked={() => (window.location.href = '/login')}
             fillForm={() => {}}
           />,
         ]}
