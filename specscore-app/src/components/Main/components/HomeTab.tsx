@@ -21,7 +21,7 @@ const RecuritContent = () => {
           alt='인기 채용공고'
         />
         <div className='gap4' />
-        <a className='text-black'>{'인기 채용 공고'}</a>
+        <span className='text-black'>{'인기 채용 공고'}</span>
       </div>
       <div className='gap12' />
       {recruits.map((v) => (
@@ -44,16 +44,16 @@ const LectureCard = () => {
       <div className='flex flex-col items-center'>
         <div className={styles.lectureImage} />
         <div className='gap4' />
-        <a className={`${styles.lectureTitle} text-sm text-black truncate`}>
+        <span className={`${styles.lectureTitle} text-sm text-black truncate`}>
           {'자소서 잘 쓰는 법'}
-        </a>
+        </span>
         <div className='gap4' />
         <div className='flex flex-row items-center'>
           <Image src={images.icons.star} width={24} height={24} alt='평점' />
-          <a>{'4.8 (123)'}</a>
+          <span>{'4.8 (123)'}</span>
         </div>
         <div>
-          <a>{'12,000₩'}</a>
+          <span>{'12,000₩'}</span>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ const LectureContent = () => {
               alt='최고 평점 강의'
             />
             <div className='gap4' />
-            <a className='text-black'>{'최고 평점 강의'}</a>
+            <span className='text-black'>{'최고 평점 강의'}</span>
           </div>
         </div>
         <CTagPicker
@@ -101,7 +101,7 @@ const LectureContent = () => {
                 alt='인기강의'
               />
               <div className='gap4' />
-              <a className='text-black'>{'인기강의'}</a>
+              <span className='text-black'>{'인기강의'}</span>
             </div>
           </div>
           <CTagPicker
@@ -125,7 +125,7 @@ const LectureContent = () => {
               </div>
             )}
             <div className='w-6 h-6 flex justify-center items-center'>
-              <a className='text-2xl font-bold text-black'>{i + 1}</a>
+              <span className='text-2xl font-bold text-black'>{i + 1}</span>
             </div>
             <div className='gap12' />
             <div className='flex-1'>

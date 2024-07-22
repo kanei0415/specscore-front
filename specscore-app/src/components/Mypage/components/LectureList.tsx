@@ -12,21 +12,21 @@ const LectureRow = ({ lecture }: LectureRowProps) => {
     <div className={`${styles.wrapper} flex flex-row items-center mb-3`}>
       <div className={styles.image} />
       <div className='ml-2 flex flex-col items-start flex-1'>
-        <a className='truncate'>{'자소서 잘 쓰는 법'}</a>
+        <span className='truncate'>{'자소서 잘 쓰는 법'}</span>
         <div className='mr-1 flex flex-row items-center'>
-          <a className='text-sm'>{'최근 학습일 2024/07/05'}</a>
+          <span className='text-sm'>{'최근 학습일 2024/07/05'}</span>
         </div>
       </div>
       <div className='ml-2 flex flex-col items-end'>
         <div className='flex flex-row items-center'>
           <Image src={images.icons.edit} width={24} height={24} alt='작성자' />
-          <a className='ml-1 text-gray text-sm'>{'자소서 마스터'}</a>
+          <span className='ml-1 text-gray text-sm'>{'자소서 마스터'}</span>
         </div>
         <div className='flex flex-row items-center'>
-          <a className='text-sm'>{'진도율'}</a>
+          <span className='text-sm'>{'진도율'}</span>
           <div className='gap12' />
-          <a className='font-bold text-red'>{'95'}</a>
-          <a className='text-sm'>{'%'}</a>
+          <span className='font-bold text-red'>{'95'}</span>
+          <span className='text-sm'>{'%'}</span>
         </div>
       </div>
     </div>
@@ -42,8 +42,8 @@ const LectureList = () => {
         <div className='flex flex-col justify-center items-center p-16'>
           <Image src={images.logo.x3} width={72} height={72} alt='로고' />
           <div className='gap8' />
-          <a>{'듣고 싶은 강의를'}</a>
-          <a>{'수강해 보세요!'}</a>
+          <span>{'듣고 싶은 강의를'}</span>
+          <span>{'수강해 보세요!'}</span>
         </div>
       ) : (
         <>

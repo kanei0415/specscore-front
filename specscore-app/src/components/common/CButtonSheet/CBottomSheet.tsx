@@ -31,7 +31,7 @@ const CBottomSheet = ({
       <button
         onClick={() => setIsSheetVisible(true)}
         className='flex flex-row items-center'>
-        <a className='text-red text-sm font-600'>{selected}</a>
+        <span className='text-red text-sm font-600'>{selected}</span>
         <Image
           src={images.icons.arrowRed}
           width={16}
@@ -45,7 +45,7 @@ const CBottomSheet = ({
             onClick={(e) => e.stopPropagation()}
             className={`${styles.pickerWrapper} p-3`}>
             <div className='w-full flex justify-center items-center'>
-              <a>{title}</a>
+              <span>{title}</span>
             </div>
             <button
               onClick={() => setIsSheetVisible(false)}

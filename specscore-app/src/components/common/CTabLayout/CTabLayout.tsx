@@ -46,9 +46,9 @@ const CTabLayout = ({ tabs, label, rendering, children }: Props) => {
             }}
             key={t}>
             {t == current ? (
-              <a className='font-bold text-black'>{label(t)}</a>
+              <span className='font-bold text-black'>{label(t)}</span>
             ) : (
-              <a className='text-gray'>{label(t)}</a>
+              <span className='text-gray'>{label(t)}</span>
             )}
           </button>
         ))}

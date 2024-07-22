@@ -37,6 +37,12 @@ const images = {
     recruitFill: `${IMAGE_ROOT}/icons/ic-recruit-fill.png`,
     lecture: `${IMAGE_ROOT}/icons/ic-lecture.png`,
     lectureFill: `${IMAGE_ROOT}/icons/ic-lecture-fill.png`,
+    roundUnselected: `${IMAGE_ROOT}/icons/ic-round-unselected.png`,
+    round: `${IMAGE_ROOT}/icons/ic-round.png`,
+    roundCheck: `${IMAGE_ROOT}/icons/ic-round-checked.png`,
+    squareUnselected: `${IMAGE_ROOT}/icons/ic-square-unselected.png`,
+    square: `${IMAGE_ROOT}/icons/ic-square.png`,
+    squareCheck: `${IMAGE_ROOT}/icons/ic-square-checked.png`,
   },
   mainBanner: {
     type01: `${IMAGE_ROOT}/main-banner-01.png`,

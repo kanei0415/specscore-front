@@ -47,15 +47,15 @@ const CPlan = ({
         <div className='flex flex-row items-center ml-3'>
           <Image src={images.logo.x1} width={24} height={24} alt='추천 상품' />
           <div className='gap4' />
-          <a className='font-bold text-sm text-red'>{'추천'}</a>
+          <span className='font-bold text-sm text-red'>{'추천'}</span>
         </div>
       )}
       {isTooltipVisible && (
         <div className={styles.tooltip}>
-          <a className='text-xs font-400'>
+          <span className='text-xs font-400'>
             {'등급을 '} <strong className='font-bold'>{'업그레이드'}</strong>
             {' 할 수 있어요!'}
-          </a>
+          </span>
           <div className={styles.triangle} />
         </div>
       )}

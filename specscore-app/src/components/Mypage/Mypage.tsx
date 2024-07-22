@@ -21,7 +21,7 @@ const Mypage = () => {
             height={24}
             alt='사용자명'
           />
-          <a className='ml-1'>{'나는 홍길동이다'}</a>
+          <span className='ml-1'>{'나는 홍길동이다'}</span>
         </div>
         <div className='ml-3'>
           <CPlan plan='Basic' />
@@ -36,7 +36,7 @@ const Mypage = () => {
           alt='좋아요 목록'
         />
         <div className='gap12' />
-        <a>{'좋아요 목록'}</a>
+        <span>{'좋아요 목록'}</span>
         <div className='flex-1' />
         <Image
           src={images.icons.arrow}
@@ -53,7 +53,7 @@ const Mypage = () => {
           alt='결제내역'
         />
         <div className='gap12' />
-        <a>{'결제내역'}</a>
+        <span>{'결제내역'}</span>
         <div className='flex-1' />
         <Image src={images.icons.arrow} width={16} height={16} alt='결제내역' />
       </div>
@@ -65,7 +65,7 @@ const Mypage = () => {
           alt='계정 관리'
         />
         <div className='gap12' />
-        <a>{'계정 관리'}</a>
+        <span>{'계정 관리'}</span>
         <div className='flex-1' />
         <Image
           src={images.icons.arrow}

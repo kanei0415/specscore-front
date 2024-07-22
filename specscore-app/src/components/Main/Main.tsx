@@ -11,7 +11,11 @@ import LectureTab from './components/LectureTab';
 
 export type Tabs = 'home' | 'recruit' | 'lecture';
 
-const Main = () => {
+type Props = {
+  isLogined: boolean;
+};
+
+const Main = ({ isLogined }: Props) => {
   const [tab, setTab] = useState<Tabs>('home');
 
   return (
@@ -47,7 +51,7 @@ const Main = () => {
             </li>
             <div className='gap12' />
             <li>
-              <Link href={'/mypage'}>
+              <Link href={isLogined ? '/mypage' : '/login'}>
                 <Image
                   src={images.icons.user}
                   width={24}
@@ -76,9 +80,9 @@ const Main = () => {
             height={24}
           />
           {tab == 'home' ? (
-            <a className='text-xs text-black'>{'홈'}</a>
+            <span className='text-xs text-black'>{'홈'}</span>
           ) : (
-            <a className='text-xs text-gray'>{'홈'}</a>
+            <span className='text-xs text-gray'>{'홈'}</span>
           )}
         </button>
         <button
@@ -93,9 +97,9 @@ const Main = () => {
             height={24}
           />
           {tab == 'recruit' ? (
-            <a className='text-xs text-black'>{'채용 공고'}</a>
+            <span className='text-xs text-black'>{'채용 공고'}</span>
           ) : (
-            <a className='text-xs text-gray'>{'채용 공고'}</a>
+            <span className='text-xs text-gray'>{'채용 공고'}</span>
           )}
         </button>
         <button
@@ -110,9 +114,9 @@ const Main = () => {
             height={24}
           />
           {tab == 'lecture' ? (
-            <a className='text-xs text-black'>{'강의'}</a>
+            <span className='text-xs text-black'>{'강의'}</span>
           ) : (
-            <a className='text-xs text-gray'>{'강의'}</a>
+            <span className='text-xs text-gray'>{'강의'}</span>
           )}
         </button>
       </nav>

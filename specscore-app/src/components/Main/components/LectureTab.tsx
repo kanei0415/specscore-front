@@ -12,7 +12,7 @@ const LectureCard = () => {
         <img src={images.lecture.lecture01} className='flex-1' />
         <div className='flex-1 flex flex-col bg-white p-3'>
           <div className='w-full flex flex-row justify-between items-center'>
-            <a className='text-gray text-sm'>{'강사 이름'}</a>
+            <span className='text-gray text-sm'>{'강사 이름'}</span>
             <div className='flex flex-row items-center'>
               <div className='flex flex-row items-center'>
                 <div className='flex flex-row items-center'>
@@ -22,7 +22,7 @@ const LectureCard = () => {
                     height={24}
                     alt='평점'
                   />
-                  <a className='text-sm'>{'4.8'}</a>
+                  <span className='text-sm'>{'4.8'}</span>
                 </div>
                 <div className='ml-1 flex flex-row items-center'>
                   <Image
@@ -31,18 +31,20 @@ const LectureCard = () => {
                     height={24}
                     alt='개추'
                   />
-                  <a className='text-sm'>{'234'}</a>
+                  <span className='text-sm'>{'234'}</span>
                 </div>
               </div>
             </div>
           </div>
           <div className='flex-1' />
           <div className='w-full'>
-            <a className='text-sm'>{'한국에서 취업합격 끝장을 알리다.'}</a>
+            <span className='text-sm'>
+              {'한국에서 취업합격 끝장을 알리다.'}
+            </span>
           </div>
           <div className='flex-1' />
           <div className='w-full'>
-            <a className='text-lg font-black'>{'130,000원'}</a>
+            <span className='text-lg font-black'>{'130,000원'}</span>
           </div>
         </div>
       </div>
@@ -54,7 +56,7 @@ const LectureTab = () => {
   return (
     <section className='flex flex-col'>
       <div className='flex flex-row p-3 items-center justify-between'>
-        <a>{'전체 강의'}</a>
+        <span>{'전체 강의'}</span>
         <div className='flex flex-row items-center'>
           <CTagPicker prev={{ label: '자소서' }} onTagPicked={(tag) => {}} />
           <div className='gap12' />
@@ -65,7 +67,7 @@ const LectureTab = () => {
             onItemSelected={() => {}}
             renderItem={(item) => (
               <div className='w-full flex justify-center items-center mb-3'>
-                <a>{item}</a>
+                <span>{item}</span>
               </div>
             )}
           />
